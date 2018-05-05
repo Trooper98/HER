@@ -21,31 +21,29 @@
     <!-- date picker scripts-->
     <script type="text/javascript">
 
-        /***********************************************
-        * Drop Down Date select script- by JavaScriptKit.com
-        * This notice MUST stay intact for use
-        * Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and more
-        ***********************************************/
-
         var monthtext = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+        var dayField;
+        var monthField;
+        var yearField;
 
-        function populatedropdown(dayfield, monthfield, yearfield) {
-            var today = new Date()
-            var dayfield = document.getElementById(dayfield)
-            var monthfield = document.getElementById(monthfield)
-            var yearfield = document.getElementById(yearfield)
-            for (var i = 0; i < 31; i++)
-                dayfield.options[i] = new Option(i, i + 1)
-            dayfield.options[today.getDate()] = new Option(today.getDate(), today.getDate(), true, true) //select today's day
-            for (var m = 0; m < 12; m++)
-                monthfield.options[m] = new Option(monthtext[m], monthtext[m])
-            monthfield.options[today.getMonth()] = new Option(monthtext[today.getMonth()], monthtext[today.getMonth()], true, true) //select today's month
-            var thisyear = today.getFullYear()
-            for (var y = 0; y < 20; y++) {
-                yearfield.options[y] = new Option(thisyear, thisyear)
-                thisyear += 1
-            }
-            yearfield.options[0] = new Option(today.getFullYear(), today.getFullYear(), true, true) //select today's year
+        function getDateSurgery() {
+            // Array of inputted string split
+            var strInputDate = document.getElementById(date);
+            var inputDate = strInputDate.split(" ");
+
+            dayField = inputDate[0];
+            monthfield = inputDate[1];
+            yearfield = inputDate[2];
+        }
+
+        function calculateFood(){
+            var d = new Date(yearfield, monthfield, dayfield);
+            var foodDate = d.getDate();
+
+            d.setDate(foodDate - 1);
+            // fetches paragraph element for foodDate
+            var foodDateEl = document.getElementById(row3).firstChild();
+            foodDateEl.innerHTML = d;
         }
 
     </script>
