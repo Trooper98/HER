@@ -19,34 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
 
     <!-- date picker scripts-->
-    <script type="text/javascript">
-
-        var monthtext = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-        var dayField;
-        var monthField;
-        var yearField;
-
-        function getDateSurgery() {
-            // Array of inputted string split
-            var strInputDate = document.getElementById(date);
-            var inputDate = strInputDate.split(" ");
-
-            dayField = inputDate[0];
-            monthfield = inputDate[1];
-            yearfield = inputDate[2];
-        }
-
-        function calculateFood(){
-            var d = new Date(yearfield, monthfield, dayfield);
-            var foodDate = d.getDate();
-
-            d.setDate(foodDate - 1);
-            // fetches paragraph element for foodDate
-            var foodDateEl = document.getElementById(row3).firstChild();
-            foodDateEl.innerHTML = d;
-        }
-
-    </script>
+    <script type="text/javascript"></script>
 
 </head>
 
@@ -68,12 +41,7 @@
     </div>
 
     <!--daTE PICKER-->
-    <script type="text/javascript">
-
-        //populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
-        window.onload = function () {
-            populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
-        }
+    <script type="text/javascript" src="js/script.js">
     </script>
 </body>
 
