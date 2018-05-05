@@ -1,0 +1,22 @@
+/*Color palletes:
+NavBar: rgb(132, 217,210);
+Background: rgb(236, 255,251);
+Headline main: rgb(254, 182, 142);
+Headline small: rgb(250, 208, 184);
+Border: rgb(173, 218, 211);
+
+*/
+
+/*Font:
+Header-----> font-family: 'Fredoka One', cursive;
+Text-----> font-family: 'Roboto', sans-serif;
+*/
+
+body{
+    background-color: rgb(236, 255,251);
+}
+
+#navbar {
+    background-color: rgb(132, 217,210);
+    font-family: "Roboto";
+}
