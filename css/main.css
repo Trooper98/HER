@@ -20,3 +20,32 @@ body{
     background-color: rgb(132, 217,210);
     font-family: "Roboto";
 }
+
+body, html {
+  height: 100%;
+}
+
+.navItem {
+	margin-top: 30px;
+	height: 50%;
+	margin-left: 40%;
+	width: 80%;
+}
+
+.postOpLink {
+	padding: 20px 0;
+	height: 100%;
+	margin-top: 30px;
+	margin-left: 10%;
+	width: 80%;
+}
+
+#postOpNav {
+	/*margin-top: 10%;*/
+	height: 70%;
+	width: 100%;
+}
+
+.navItem a:hover {
+	background-color: pink;
+}

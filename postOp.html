@@ -2,10 +2,62 @@
 <html>
 <head>
 	<title>HelpCare - PostOp</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <!-- bootstrap api -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- google font api-->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
+
 </head>
 <body>
 	<!-- source: http://coronationdentalspecialty.ca/patient-information/jaw-orthognathic-surgery-instructions/ -->
-	<div id="dietInfo" class="postOpInfo">
+
+	<!--<div class="container">
+		<ul>
+			<li class="postOpListItem odd">Diet</li>
+			<li class="postOpListItem even">Hygiene</li>
+			<li class="postOpListItem odd">Aftercare</li>
+		</ul>
+	</div>-->
+	 <!-- A vertical navbar -->
+	<nav id="postOpNav" class="navbar bg-light">
+
+  	<!-- Links -->
+  		<ul class="navbar-nav">
+    		<li class="nav-item navItem">
+      			<a class="nav-link postOpLink" href="food.html">Diet</a>
+    		</li>
+    		<li class="nav-item navItem">
+      			<a class="nav-link postOpLink" href="#">Hygiene</a>
+    		</li>
+    		<li class="nav-item navItem">
+      			<a class="nav-link postOpLink" href="#">Aftercare</a>
+    		</li>
+  		</ul>
+
+</nav> 
+
+	<!--<div class="container">
+		<div id="left">
+  			<a href="food.html"><div class="one top col odd grid">Food</div></a>
+  			<div class="three bottom col odd grid">Hygiene</div>
+  		</div>
+  		<div id="right">
+  			<div class="two top col even grid">Aftercare</div>
+  			<div class="four bottom col even grid">4</div>
+  		</div>
+	</div>-->
+
+	<!--<div id="dietInfo" class="postOpInfo">
 		<h1 class="infoHeader">Diet</h1>
 		<p class="infoText">
 			<ul>
@@ -24,7 +76,14 @@
 				<li>Swelling begins to lessen after about one week. Purchase a new baby toothbrush, and using a small amount of toothpaste, concentrate on brushing the metal braces. Clean the braces gently but thoroughly.</li>
 				<li>Avoid showering for two days after surgery, although taking a bath is fine provided you do not get the facial incisions wet.</li>
 		</p>
-	</div>
+	</div>-->
 
+	<!-- Navbar -->
+    <nav class="navbar fixed-bottom" id="navbar">
+        <a class="nav-link active" href="preOp.html">Pre-Op</a>
+        <a class="nav-link" href="op.html">Op</a>
+        <a class="nav-link" href="postOp.html">Post-OP</a>
+        <a class="nav-link" href="calendar.html">Calendar</a>
+    </nav>
 </body>
 </html>
