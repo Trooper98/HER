@@ -13,13 +13,18 @@ Text-----> font-family: 'Roboto', sans-serif;
 */
 
 body{
-    background-color: rgb(236, 255,251);
+    background-color:rgb(234, 252, 255);
     font-family: "Roboto";
     color: lightgray;
+    padding-bottom: 65px;
+}
+
+h1{
+    font-size: 15px; 
 }
 
 #navbar {
-    background-color: rgb(132, 217,210);
+    background-color:rgb(77, 84, 96);
     font-family: "Roboto";
     color:white;
 }
@@ -29,6 +34,35 @@ body{
 }
 
 div{
-    margin-top: 10px;
+    //margin-top: 10px;
     text-align: center;
+    font-size: 15px;
+    font-weight: 5px;
+}
+
+#navbar a{
+    display:block;
+    color: rgb(255, 255, 255);
+    
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: rgb(23, 162, 184);
+}
+
+#cal {
+    background-color: white;
+}
+
+.hdr{
+    color:bisque;
+    background-color: white;
+    
+}
+
+p{
+    color: burlywood;
+    margin-top: 10px;
 }
