@@ -17,30 +17,33 @@
 
     <!-- google font api-->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
-
-    <!-- date picker scripts-->
-    <script type="text/javascript"></script>
-
 </head>
 
 <body>
-    <div class="container-fluid" id="main">
+    <div class="container-fluid" id="dateInput">
         <div class="row">
-            <div class="col-8">
-                <form action="" name="someform">
-                    <select id="daydropdown">
-                    </select>
-                    <select id="monthdropdown">
-                    </select>
-                    <select id="yeardropdown">
-                    </select>
-                </form>
-
+            <div class="col-4 offset-2">
+                <img src="img/hospital.gif">
+            </div>
+            <div class="col-8 offset-2">
+                <div class="search-form">
+                    <div class="input-group mb-3">
+                        <input id="day" placeholder="Day" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="month" placeholder="Month" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="year" placeholder="Year" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 offset-3">
+                    <button type="button" class="btn btn-primary btn-lg">Get Started</button>
             </div>
         </div>
     </div>
 
-    <!--daTE PICKER-->
     <script type="text/javascript" src="js/script.js">
     </script>
 </body>

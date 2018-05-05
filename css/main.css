@@ -12,12 +12,17 @@ Header-----> font-family: 'Fredoka One', cursive;
 Text-----> font-family: 'Roboto', sans-serif;
 */
 
-#main{
+/*------------------------ ------------------------ ------------------------*/
+#dateInput{
+    padding-top: 90px;
     background-color: rgb(132, 217,210);
     width: 100%;
     height: 100%;
     position: fixed;
 }
 
-
-/*------------------------ ------------------------ ------------------------*/
+#dateInput img{
+    max-width: 175px;
+    height: auto;
+    padding: 20px 40px;
+}
