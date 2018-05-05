@@ -5,12 +5,15 @@
         var surgeryDate;
 
         function getDateSurgery() {
-            // Array of inputted string split
-            var dayField = document.getElementById(day);
-            var monthField = document.getElementById(month);
-            var yearField = document.getElementById(year);
+            dayField = document.getElementById("day").value;
+            monthField = document.getElementById("month").value;
+            yearField = document.getElementById("year").value;
 
-            surgeryDate = new Date(yearfield, monthfield, dayfield);
+            console.log(dayField);
+            console.log(monthField);
+            console.log(yearField);
+
+            surgeryDate = new Date(yearField, monthField, dayField);
         }
 
         function calculateFood(){
