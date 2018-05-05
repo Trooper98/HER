@@ -20,7 +20,7 @@
     <div class="form-group row">
       <label for="form-text" class="col-sm-2 col-form-label">First Name</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="fname" placeholder="First Name">
+        <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
       </div>
     </div>
 
@@ -119,19 +119,23 @@ var ssn = document.getElementById('ssn');
 var allergies = document.getElementById('allergies');
 var prevsick = document.getElementById('prevsick');
 
+$('submit').click(function() {
+  var enteredName = document.getElementById('fname').value;
+  console.log(enteredName);
+});
 form.onsubmit = function() {
-   var fname = fname.text;
+   var fname = document.forms["form"]["fname"];
    console.log(fname);
    var lname = lname.value;
-   alert(lname);
+   console.log(lname);
    var age = age.value;
-   alert(age);
+   console.log(age);
    var ssn = ssn.value;
-   alert(ssn);
+   console.log(ssn);
    var allergies = allergies.value;
-   alert(allergies);
+   console.log(allergies);
    var prevsick = prevsick.value;
-   alert(prevsick);
+   console.log(prevsick);
 };
 
 </script>
