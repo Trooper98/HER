@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
   crossorigin="anonymous">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -99,43 +99,54 @@
 
     <div class="form-group row">
       <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" onclick="printvalues()" class="btn btn-primary">Submit </button>
       </div>
     </div>
   </form>
 
+<p id="demo"></p>
+
+
+  <script>
+  function printvalues() {
+    var fname = document.getElementById('fname').value;
+    demo.innerHTML = fname;
+
+  }
+  /*
+  var form = document.getElementById('form');
+  var fname = document.getElementById('fname');
+  var lname = document.getElementById('lname');
+  var age = document.getElementById('age');
+  var ssn = document.getElementById('ssn');
+  var allergies = document.getElementById('allergies');
+  var prevsick = document.getElementById('prevsick');
+
+
+  $('submit').click(function alertname() {
+    var enteredName = document.getElementById('fname');
+    alert(enteredName);
+  });
+  */
+  /*
+    form.onsubmit = function() {
+     var fname = document.forms["form"]["fname"];
+     console.log(fname);
+     var lname = lname.value;
+     console.log(lname);
+     var age = age.value;
+     console.log(age);
+     var ssn = ssn.value;
+     console.log(ssn);
+     var allergies = allergies.value;
+     console.log(allergies);
+     var prevsick = prevsick.value;
+     console.log(prevsick);
+  };
+  */
+
+  </script>
 
 </div>
-
 </body>
 </html>
-
-<script>
-var form = document.getElementById('form');
-var fname = document.getElementById('fname');
-var lname = document.getElementById('lname');
-var age = document.getElementById('age');
-var ssn = document.getElementById('ssn');
-var allergies = document.getElementById('allergies');
-var prevsick = document.getElementById('prevsick');
-
-$('submit').click(function() {
-  var enteredName = document.getElementById('fname').value;
-  console.log(enteredName);
-});
-form.onsubmit = function() {
-   var fname = document.forms["form"]["fname"];
-   console.log(fname);
-   var lname = lname.value;
-   console.log(lname);
-   var age = age.value;
-   console.log(age);
-   var ssn = ssn.value;
-   console.log(ssn);
-   var allergies = allergies.value;
-   console.log(allergies);
-   var prevsick = prevsick.value;
-   console.log(prevsick);
-};
-
-</script>
