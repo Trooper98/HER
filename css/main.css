@@ -14,9 +14,21 @@ Text-----> font-family: 'Roboto', sans-serif;
 
 body{
     background-color: rgb(236, 255,251);
+    font-family: "Roboto";
+    color: lightgray;
 }
 
 #navbar {
     background-color: rgb(132, 217,210);
     font-family: "Roboto";
+    color:white;
+}
+
+#texts {
+    color: white;
+}
+
+div{
+    margin-top: 10px;
+    text-align: center;
 }
