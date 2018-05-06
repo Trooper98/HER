@@ -88,12 +88,14 @@ function calculateDeclaration() {
     
     console.log("decDate day: " + decDate.getDate());
     // fetches paragraph element for foodDate
-    var decDateEl = document.getElementById("decDate");
+    var decDateEl = document.getElementById("declarationDate");
     decDateEl.innerHTML = "<b>" + decDate.getDate() + "-"
                             + monthtext[decDate.getMonth()]
                             + "-" + 
                             decDate.getUTCFullYear()
                             + "</b>";
+    var daysLeftDecEl = document.getElementById("daysLeftDec");
+    daysLeftDecEl.innerHTML = daysLeft;
 }
 
 function calculateTeeth() {
@@ -120,6 +122,32 @@ function calculateTeeth() {
 
     var daysLeftTeethEl = document.getElementById("daysLeftTeeth");
     daysLeftTeethEl.innerHTML = daysLeft;
+}
+
+function calculateMedicine() {
+    console.log("year:" + localStorage.getItem("surgeryYear"));
+
+    var medYear = localStorage.getItem("surgeryYear");
+    var medMonth = localStorage.getItem("surgeryMonth") - 1;
+    var medDay = localStorage.getItem("surgeryDay") - 5;
+    
+    var medDate = new Date(medYear, medMonth, 
+                            medDay);
+    
+    console.log("medDate day: " + medDate.getDate());
+    // fetches paragraph element for foodDate
+    var medDateEl = document.getElementById("medDate");
+    medDateEl.innerHTML = "<b>" + medDate.getDate() + "-"
+                            + monthtext[medDate.getMonth()]
+                            + "-" + 
+                            medDate.getUTCFullYear()
+                            + "</b>";
+
+    var daysLeft = Math.round((medDate - Date.now()) / (1000*60*60*24));
+    console.log("daysLeftTeeth: " + daysLeft);
+
+    var daysLeftMedEl = document.getElementById("daysLeftMed");
+    daysLeftMedEl.innerHTML = daysLeft;
 }
 
 function progressBarShower() {
@@ -167,6 +195,21 @@ function progressBarTeeth() {
     console.log("cureentWidth: " + newWidth);
 }
 
+function progressBarDec() {
+    var progressDecEl = document.getElementById("progressDec");
+    var currentWidth = parseInt(progressDecEl.style.width);
+
+    var newWidth = currentWidth + 100;
+
+    if(newWidth > 100) {
+        newWidth = 100;
+    }
+
+    progressDecEl.style.width = newWidth + "%";
+
+    console.log("cureentWidth: " + newWidth);
+}
+
 function saveDecFormVariables() {
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
@@ -186,8 +229,18 @@ function saveDecFormVariables() {
     localStorage.setItem("prevsick", prevsick);
 }
 
+
+
 function printDecFormVariables() {
-    
+    var fname = localStorage.getItem("fname");
+    var fname = localStorage.getItem("fname");
+    var fname = localStorage.getItem("fname");
+
+    console.log("fname: " + fname);
+
+    var fnameEl = document.getElementById("fnameVar");
+    fnameEl.innerHTML = fname;
+
 }
 
 function countdown(){
