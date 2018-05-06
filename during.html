@@ -1,121 +1,100 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HER</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- css -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <!-- bootstrap api -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        
+
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
-    google font api
+    <!--google font api-->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
-    
-     <link href="css/main.css" rel="stylesheet" type="text/css">
 
-    </head>
-    <body> 
+</head>
+
+<body>
     <div class="container">
-        <div class="jumbotron" style="background-color:white !important; color:darksalmon; margin-top: 10px;">
-    <h1>Calendar</h1>
-    <p>M   T   W   T   F   S   S</p>
-    <div class="radio">
-        <label style="color: white;"><input type="radio" name="optradio" > __     </label>
-        <label style="color: white;"><input type="radio" name="optradio">   __   </label>
-        <label style="color: white;"><input type="radio" name="optradio">  __    </label>
-        <label style="color: white;"><input type="radio" name="optradio">   __   </label>
-        <label style="color: white;"><input type="radio" name="optradio">  __    </label>
-        <label style="color: white;"><input type="radio" name="optradio"> __     </label>
-        <label style="color: white;"><input type="radio" name="optradio">      </label>    
-</div>
-</div>
-</div>
-       
-        <div class="container" >
-            
-             <!-- <div class="row">
-                <div class="col-12" style="background-color:white;">
-                    <div class="progress" style="margin-top: 10px;">
-                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                        </div>
-                    </div>
-                    <p>hello</p>
-                </div>   
-            </div>
-            
-            <div class="row">
-                <div class="col-12" style="background-color: white; margin-top: 10px;">
-                    <div class="progress" style="margin-top: 10px;">
-                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                        </div>
-                    </div>
-                    <p>hello</p>
-                </div>   
-            </div>
-            -->
-            <div class="row">
-                <div class="col-12" style="background-color: white; margin-top: 10px;">
-                    <p>Do not shower. Until: </p><div id="row1"><p id="showerDate"></p></div>
-                    <div class="progress" style="margin-top: 10px;">
-                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm" style="float:right; margin-top: 5px;">+1 Made it!</button>
-                    <button type="button" class="btn btn-outline-info btn-sm" style="float:left; margin-top: 5px;">More Info</button>
-                    <p style="margin-top: 5px;">Days left: 10</p>       
-                </div>   
-            </div>
-            
-            <div class="row">
-                <div class="col-12" style="background-color: white; margin-top: 10px;">
-                    <p>Do not brush teeth: shrimp. Until: </p><div id="row2"><p id="teethDate"></p></div>
-                    <div class="progress" style="margin-top: 10px;">
-                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm" style="float:right; margin-top: 5px;">+1 Made it!</button>
-                    <button type="button" class="btn btn-outline-info btn-sm" style="float:left; margin-top: 5px;">More Info</button>
-                    <p style="margin-top: 5px;">Days left: 10</p>       
-                </div>   
-            </div>
-            
-            <div class="row">
-                <div class="col-12" style="background-color: white; margin-top: 10px; margin-bottom: 10px;">
-                    <p>Not allowed to eat: shrimp. Until: </p><div id="row3"><p id="foodDate"></p></div>
-                    <div class="progress" style="margin-top: 10px;">
-                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm" style="float:right; margin-top: 5px;">+1 Made it!</button>
-                    <button type="button" class="btn btn-outline-info btn-sm" style="float:left; margin-top: 5px;">More Info</button>
-                    <p style="margin-top: 5px;">Days left: 10</p>       
-                </div>   
-            </div>
-            
-        </div>
         
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="background-color: white; margin-top: 10px;">
+                <p>Do not shower. Until: </p>
+                <div id="row1">
+                    <p id="showerDate"></p>
+                </div>
+                <div class="progress" style="margin-top: 10px;">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info btn-sm" style="float:right; margin-top: 5px;">+1 Made it!</button>
+                <button type="button" class="btn btn-outline-info btn-sm" style="float:left; margin-top: 5px;">More Info</button>
+                <p style="margin-top: 5px;">Days left: 10</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" style="background-color: white; margin-top: 10px;">
+                <p>Do not brush teeth: shrimp. Until: </p>
+                <div id="row2">
+                    <p id="teethDate"></p>
+                </div>
+                <div class="progress" style="margin-top: 10px;">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info btn-sm" style="float:right; margin-top: 5px;">+1 Made it!</button>
+                <button type="button" class="btn btn-outline-info btn-sm" style="float:left; margin-top: 5px;">More Info</button>
+                <p style="margin-top: 5px;">Days left: 10</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" style="background-color: white; margin-top: 10px; margin-bottom: 10px;">
+                <p>Not allowed to eat: shrimp. Until: </p>
+                <div id="row3">
+                    <p id="foodDate"></p>
+                </div>
+                <div class="progress" style="margin-top: 10px;">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info btn-sm" style="float:right; margin-top: 5px;">+1 Made it!</button>
+                <button type="button" class="btn btn-outline-info btn-sm" style="float:left; margin-top: 5px;">More Info</button>
+                <p style="margin-top: 5px;">Days left: 10</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar fixed-bottom container-fluid" id="navbar">
+        <a class="nav-link" href="#"><img id="navIcon" src="img/health.png"></a>
+        <a class="nav-link" href="#"><img id="navIcon" src="img/declaration.png"></a>
+        <a class="nav-link" href="#"><img id="navIcon" src="img/question.png"></a>
+        <a class="nav-link" href="index.html"><img id="navIcon" src="img/restart.png"></a>
+    </div>
+
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function () {
             calculateFood();
             calculateShower();
             calculateTeeth();
         });    
-    </script>        
-    </body>
+    </script>
+</body>
+
 </html>

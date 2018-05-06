@@ -25,6 +25,7 @@ Text-----> font-family: 'Roboto', sans-serif;
     max-width: 175px;
     height: auto;
     padding: 20px 40px;
+}
 
 body {
     background-color:rgb(234, 252, 255);
@@ -47,13 +48,6 @@ h1{
     color: white;
 }
 
-div{
-    //margin-top: 10px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 5px;
-}
-
 #navbar a{
     display:block;
     color: rgb(255, 255, 255);
@@ -70,13 +64,7 @@ div{
     background-color: white;
 }
 
-.hdr{
-    color:bisque;
-    background-color: white;
-    
-}
-
 p{
-    color: burlywood;
+    color: rgb(94, 94, 94);
     margin-top: 10px;
 }
