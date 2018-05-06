@@ -30,7 +30,7 @@ function calculateFood(){
     console.log("year:" + localStorage.getItem("surgeryYear"));
 
     var foodYear = localStorage.getItem("surgeryYear");
-    var foodMonth = localStorage.getItem("surgeryMonth");
+    var foodMonth = localStorage.getItem("surgeryMonth") - 1;
     var foodDay = localStorage.getItem("surgeryDay") - 1;
 
     var foodDate = new Date(foodYear, foodMonth, foodDay);
@@ -43,14 +43,20 @@ function calculateFood(){
                             + "-" + 
                             foodDate.getUTCFullYear()
                             + "</b>";
+
+    var daysLeft = Math.round((foodDate - Date.now()) / (1000*60*60*24));
+    console.log("daysLeftFood: " + daysLeft);
+
+    var daysLeftFoodEl = document.getElementById("foodDaysLeft");
+    daysLeftFoodEl.innerHTML = daysLeft;
 }
 
 function calculateShower() {
     console.log("year:" + localStorage.getItem("surgeryYear"));
 
     var showerYear = localStorage.getItem("surgeryYear");
-    var showerMonth = localStorage.getItem("surgeryMonth");
-    var showerDay = localStorage.getItem("surgeryDay") - 3
+    var showerMonth = localStorage.getItem("surgeryMonth") - 1;
+    var showerDay = localStorage.getItem("surgeryDay") - 3;
 
     var showerDate = new Date(showerYear, showerMonth, 
                             showerDay);
@@ -63,14 +69,19 @@ function calculateShower() {
                             + "-" + 
                             showerDate.getUTCFullYear()
                             + "</b>";
+    var daysLeft = Math.round((showerDate - Date.now()) / (1000*60*60*24));
+    console.log("daysLeftShower: " + daysLeft);
+
+    var daysLeftShowerEl = document.getElementById("daysLeftShower");
+    daysLeftShowerEl.innerHTML = daysLeft;
 }
 
 function calculateDeclaration() {
     console.log("year:" + localStorage.getItem("surgeryYear"));
 
     var decYear = localStorage.getItem("surgeryYear");
-    var decMonth = localStorage.getItem("surgeryMonth");
-    var decDay = localStorage.getItem("surgeryDay") - 3
+    var decMonth = localStorage.getItem("surgeryMonth") - 1;
+    var decDay = localStorage.getItem("surgeryDay") - 1;
     
     var decDate = new Date(decYear, decMonth, 
                             decDay);
@@ -89,8 +100,8 @@ function calculateTeeth() {
     console.log("year:" + localStorage.getItem("surgeryYear"));
 
     var teethYear = localStorage.getItem("surgeryYear");
-    var teethMonth = localStorage.getItem("surgeryMonth");
-    var teethDay = localStorage.getItem("surgeryDay") - 3
+    var teethMonth = localStorage.getItem("surgeryMonth") - 1;
+    var teethDay = localStorage.getItem("surgeryDay") - 2;
     
     var teethDate = new Date(teethYear, teethMonth, 
                             teethDay);
@@ -103,4 +114,10 @@ function calculateTeeth() {
                             + "-" + 
                             teethDate.getUTCFullYear()
                             + "</b>";
+
+    var daysLeft = Math.round((teethDate - Date.now()) / (1000*60*60*24));
+    console.log("daysLeftTeeth: " + daysLeft);
+
+    var daysLeftTeethEl = document.getElementById("daysLeftTeeth");
+    daysLeftTeethEl.innerHTML = daysLeft;
 }
