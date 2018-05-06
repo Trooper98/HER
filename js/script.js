@@ -122,6 +122,51 @@ function calculateTeeth() {
     daysLeftTeethEl.innerHTML = daysLeft;
 }
 
+function progressBarShower() {
+    var progressShowerEl = document.getElementById("progressShower");
+    var currentWidth = parseInt(progressShowerEl.style.width);
+
+    var newWidth = currentWidth + 100/3;
+
+    if(newWidth > 100) {
+        newWidth = 100;
+    }
+
+    progressShowerEl.style.width = newWidth + "%";
+
+    console.log("cureentWidth: " + newWidth);
+}
+
+function progressBarFood() {
+    var progressFoodEl = document.getElementById("progressFood");
+    var currentWidth = parseInt(progressFoodEl.style.width);
+
+    var newWidth = currentWidth + 100;
+
+    if(newWidth > 100) {
+        newWidth = 100;
+    }
+
+    progressFoodEl.style.width = newWidth + "%";
+
+    console.log("cureentWidth: " + newWidth);
+}
+
+function progressBarTeeth() {
+    var progressTeethEl = document.getElementById("progressTeeth");
+    var currentWidth = parseInt(progressTeethEl.style.width);
+
+    var newWidth = currentWidth + 100/4;
+
+    if(newWidth > 100) {
+        newWidth = 100;
+    }
+
+    progressTeethEl.style.width = newWidth + "%";
+
+    console.log("cureentWidth: " + newWidth);
+}
+
 function countdown(){
 
     var surgeryYear = localStorage.getItem("surgeryYear");
