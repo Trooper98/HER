@@ -72,3 +72,20 @@ p{
 #navIcon{
     
 }
+
+.countDown{
+    background: rgb(184, 184, 184);
+    border: 5px solid rgb(156, 155, 155);
+    border-radius: 5%;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.countDown p{
+    color:black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    text-align: center;
+    vertical-align: center;
+}
+

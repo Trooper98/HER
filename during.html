@@ -27,12 +27,20 @@
 
 <body>
     <div class="container">
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div class="countDown">
+                    <p id="gameDay"></p>
+                    <!-- countdowwwwwwnnnn-->
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-12" style="background-color: white; margin-top: 10px;">
-                <p>Do not shower. Until:
+                <p>Start showering with the <strong>Special Soap</strong> three times a day by:
                     <span id="showerDate"></span>
                 </p>
                 <div class="progress" style="margin-top: 10px;">
@@ -104,6 +112,7 @@
             calculateFood();
             calculateShower();
             calculateTeeth();
+            countdown();
         });    
     </script>
 </body>
