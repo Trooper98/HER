@@ -198,7 +198,6 @@ function progressBarMed() {
 function saveDecFormVariables() {
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
-    var age = document.getElementById("age").value;
     var psn = document.getElementById("psn").value;
     var allergies = document.getElementById("allergies").value;
     var prevsick = document.getElementById("prevsick").value;
@@ -207,7 +206,6 @@ function saveDecFormVariables() {
     var birthDay = age[2];*/
     localStorage.setItem("fname", fname);
     localStorage.setItem("lname", lname);
-    localStorage.setItem("age", age);
     localStorage.setItem("psn", psn);
     localStorage.setItem("allergies", allergies);
     localStorage.setItem("prevsick", prevsick);
@@ -216,16 +214,15 @@ function saveDecFormVariables() {
 function printDecFormVariables() {
     var fname = localStorage.getItem("fname");
     var lname = localStorage.getItem("lname");
-    var age = localStorage.getItem("age");
-    var psn = localStorage.getItem("age");
+    var psn = localStorage.getItem("psn");
+    var allergies = localStorage.getItem("allergies");
+    var prevsick = localStorage.getItem("prevsick");
     console.log("fname: " + fname);
 
     var fnameEl = document.getElementById("fnameVar");
     fnameEl.innerHTML = fname;
     var lnameEl = document.getElementById("lnameVar");
     lnameEl.innerHTML = lname;
-    var ageEl = document.getElementById("ageVar");
-    ageEl.innerHTML = age;
     var psnEl = document.getElementById("psnVar");
     psnEl.innerHTML = psn;
     var allergiesEl = document.getElementById("allergiesVar");
@@ -237,7 +234,7 @@ function printDecFormVariables() {
 function countdown(){
     var surgeryYear = localStorage.getItem("surgeryYear");
     var surgeryMonth = localStorage.getItem("surgeryMonth") - 1;
-    var surgeryDay = localStorage.getItem("surgeryDay") - 1;
+    var surgeryDay = localStorage.getItem("surgeryDay");
     
     var surgeryDate = new Date(surgeryYear, surgeryMonth, 
                             surgeryDay);
