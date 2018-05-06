@@ -61,71 +61,6 @@ h1{
     background-color: rgb(23, 162, 184);
 }
 
-#cal {
-    background-color: white;
-}
-
-p{
-    color: rgb(94, 94, 94);
-    margin-top: 10px;
-}
-
-p{
-    color: burlywood;
-    margin-top: 10px;
-}
-
-.foodPopUp{
-    background:rgba(0,0,0,.4);
-    cursor:pointer;
-    display:none;
-    height:100%;
-    position:fixed;
-    text-align:center;
-    top:0;
-    width:100%;
-    z-index:10000;
-}
-.foodPopUp .helper{
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
-}
-.foodPopUp > div {
-    background-color: #fff;
-    box-shadow: 10px 10px 60px #555;
-    display: inline-block;
-    height: auto;
-    max-width: 551px;
-    min-height: 100px;
-    vertical-align: middle;
-    width: 60%;
-    position: relative;
-    border-radius: 8px;
-    padding: 15px 5%;
-}
-
-.popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-}
-.popupCloseButton:hover {
-    background-color: #ccc;
-}
-
 .countDown{
     background: rgb(184, 184, 184);
     border: 5px solid rgb(156, 155, 155);
@@ -140,14 +75,14 @@ p{
     font-family: 'Open Sans';
     font-size: 25px;
     font-weight: bold;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 #countDown p{
     font-family: 'PT Sans';
     font-size: 25px;
     font-weight: bold;
-    color:black;
+    color:rgb(245, 245, 245);
 }
 
 /*------------------------ Health Declaration ------------------------*/
@@ -174,3 +109,8 @@ p{
     color:black;
 }
 
+/*------------------------ goalCard ------------------------*/
+
+#goalCard{}
+#daysLeft{}
+/*------------------------ Health Declaration ------------------------*/
