@@ -167,6 +167,29 @@ function progressBarTeeth() {
     console.log("cureentWidth: " + newWidth);
 }
 
+function saveDecFormVariables() {
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var age = document.getElementById("age").value;
+    var psn = document.getElementById("psn").value;
+    var allergies = document.getElementById("allergies").value;
+    var prevsick = document.getElementById("prevsick").value;
+    /*var birthYear = age[0];
+    var birthMonth = age[1];
+    var birthDay = age[2];*/
+
+    localStorage.setItem("fname", fname);
+    localStorage.setItem("lname", lname);
+    localStorage.setItem("age", age);
+    localStorage.setItem("psn", psn);
+    localStorage.setItem("allergies", allergies);
+    localStorage.setItem("prevsick", prevsick);
+}
+
+function printDecFormVariables() {
+    
+}
+
 function countdown(){
 
     var surgeryYear = localStorage.getItem("surgeryYear");
