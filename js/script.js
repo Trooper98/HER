@@ -32,32 +32,75 @@ function calculateFood(){
     var foodYear = localStorage.getItem("surgeryYear");
     var foodMonth = localStorage.getItem("surgeryMonth");
     var foodDay = localStorage.getItem("surgeryDay") - 1;
-    /*var foodDate = new Date(localStorage.getItem("surgeryYear"), 
-        localStorage.getItem("surgeryMonth"), 
-        localStorage.getItem("surgeryDay")); */
+
     var foodDate = new Date(foodYear, foodMonth, foodDay);
     
     console.log("foodDate day: " + foodDate.getDate());
     // fetches paragraph element for foodDate
     var foodDateEl = document.getElementById("foodDate");
-    foodDateEl.innerHTML = foodDate.getDate() + "-"
+    foodDateEl.innerHTML = "<b>" + foodDate.getDate() + "-"
                             + monthtext[foodDate.getMonth()]
-                            + "-" + foodDate.getUTCFullYear();
+                            + "-" + 
+                            foodDate.getUTCFullYear()
+                            + "</b>";
 }
 
 function calculateShower() {
-    var showerDate = surgeryDate.getDate();
+    console.log("year:" + localStorage.getItem("surgeryYear"));
 
-    showerDate.setDate(surgeryDate - 3);
-    var showerDateEl = document.getElementById(row1);
-    showerDateEl.innerHTML = showerDate.toString();
+    var showerYear = localStorage.getItem("surgeryYear");
+    var showerMonth = localStorage.getItem("surgeryMonth");
+    var showerDay = localStorage.getItem("surgeryDay") - 3
+
+    var showerDate = new Date(showerYear, showerMonth, 
+                            showerDay);
+    
+    console.log("showerDate day: " + showerDate.getDate());
+    // fetches paragraph element for foodDate
+    var showerDateEl = document.getElementById("showerDate");
+    showerDateEl.innerHTML = "<b>" + showerDate.getDate() + "-"
+                            + monthtext[showerDate.getMonth()]
+                            + "-" + 
+                            showerDate.getUTCFullYear()
+                            + "</b>";
 }
 
 function calculateDeclaration() {
-    var declarationDate = surgeryDate.getDate();
+    console.log("year:" + localStorage.getItem("surgeryYear"));
+
+    var decYear = localStorage.getItem("surgeryYear");
+    var decMonth = localStorage.getItem("surgeryMonth");
+    var decDay = localStorage.getItem("surgeryDay") - 3
     
-    foodDate.setDate(surgeryDate - 1);
+    var decDate = new Date(decYear, decMonth, 
+                            decDay);
+    
+    console.log("decDate day: " + decDate.getDate());
     // fetches paragraph element for foodDate
-    var foodDateEl = document.getElementById(row3).firstChild();
-    foodDateEl.innerHTML = foodDate.toString();
+    var decDateEl = document.getElementById("decDate");
+    decDateEl.innerHTML = "<b>" + decDate.getDate() + "-"
+                            + monthtext[decDate.getMonth()]
+                            + "-" + 
+                            decDate.getUTCFullYear()
+                            + "</b>";
+}
+
+function calculateTeeth() {
+    console.log("year:" + localStorage.getItem("surgeryYear"));
+
+    var teethYear = localStorage.getItem("surgeryYear");
+    var teethMonth = localStorage.getItem("surgeryMonth");
+    var teethDay = localStorage.getItem("surgeryDay") - 3
+    
+    var teethDate = new Date(teethYear, teethMonth, 
+                            teethDay);
+    
+    console.log("teethDate day: " + teethDate.getDate());
+    // fetches paragraph element for foodDate
+    var teethDateEl = document.getElementById("teethDate");
+    teethDateEl.innerHTML = "<b>" + teethDate.getDate() + "-"
+                            + monthtext[teethDate.getMonth()]
+                            + "-" + 
+                            teethDate.getUTCFullYear()
+                            + "</b>";
 }
