@@ -21,17 +21,22 @@
     <script type="text/javascript" src="js/script.js"></script>
 
     <!--google font api-->
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orienta|PT+Sans" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-10 offset-1">
-                <div class="countDown">
-                    <p id="gameDay"></p>
-                    <!-- countdowwwwwwnnnn-->
+                <div class="card text-white bg-primary mb-3" id="countDown" style="max-width: 18rem;">
+                    <div class="card-header"><h4>Operation</h4></div>
+                    <div class="card-body">
+                        <div>
+                            <p id="gameDay"></p>
+                            <!-- countdowwwwwwnnnn-->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,7 +45,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12" style="background-color: white; margin-top: 10px;">
-                <p>Start showering with the <strong>Special Soap</strong> three times a day by:
+                <p>Start showering with the
+                    <strong>Special Soap</strong> three times a day by:
                     <span id="showerDate"></span>
                 </p>
                 <div class="progress" style="margin-top: 10px;">
@@ -93,10 +99,10 @@
 
     <!-- Navbar -->
     <div class="navbar fixed-bottom container-fluid" id="navbar">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="during.html">
             <img id="navIcon" src="img/health.png">
         </a>
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="declaration.html">
             <img id="navIcon" src="img/declaration.png">
         </a>
         <a class="nav-link" href="#">

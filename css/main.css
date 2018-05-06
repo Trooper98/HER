@@ -8,8 +8,9 @@ Border: rgb(173, 218, 211);
 */
 
 /*Font:
-Header-----> font-family: 'Fredoka One', cursive;
-Text-----> font-family: 'Roboto', sans-serif;
+font-family: 'Orienta', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 */
 
 /*------------------------ ------------------------ ------------------------*/
@@ -39,7 +40,7 @@ h1{
 }
 
 #navbar {
-    background-color:rgb(77, 84, 96);
+    background-color:rgb(125, 127, 131);
     font-family: "Roboto";
     color:white;
 }
@@ -69,23 +70,50 @@ p{
     margin-top: 10px;
 }
 
-#navIcon{
-    
-}
 
-.countDown{
-    background: rgb(184, 184, 184);
+#countDown{
     border: 5px solid rgb(156, 155, 155);
     border-radius: 5%;
     margin-top: 30px;
     padding-top: 10px;
-}
-
-.countDown p{
-    color:black;
-    font-family: 'Roboto';
-    font-size: 30px;
     text-align: center;
     vertical-align: center;
 }
 
+#countDown h4{
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+}
+
+#countDown p{
+    font-family: 'PT Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color:black;
+}
+
+/*------------------------ Health Declaration ------------------------*/
+#healthInfo{
+    border: 5px solid rgb(156, 155, 155);
+    border-radius: 5%;
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: center;
+}
+
+#healthInfo h4{
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+}
+
+#healthInfo p{
+    font-family: 'PT Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
