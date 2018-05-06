@@ -61,7 +61,7 @@ h1{
     background-color: rgb(23, 162, 184);
 }
 
-.countDown{
+#countDown{
     background: rgb(184, 184, 184);
     border: 5px solid rgb(156, 155, 155);
     border-radius: 5%;
@@ -112,5 +112,7 @@ h1{
 /*------------------------ goalCard ------------------------*/
 
 #goalCard{}
-#daysLeft{}
+#daysLeft{
+    color: rgb(61, 156, 61);
+}
 /*------------------------ Health Declaration ------------------------*/
