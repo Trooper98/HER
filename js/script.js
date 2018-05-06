@@ -210,6 +210,21 @@ function progressBarDec() {
     console.log("cureentWidth: " + newWidth);
 }
 
+function progressBarMed() {
+    var progressMedEl = document.getElementById("progressMed");
+    var currentWidth = parseInt(progressMedEl.style.width);
+
+    var newWidth = currentWidth + 100/5;
+
+    if(newWidth > 100) {
+        newWidth = 100;
+    }
+
+    progressMedEl.style.width = newWidth + "%";
+
+    console.log("cureentWidth: " + newWidth);
+}
+
 function saveDecFormVariables() {
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
@@ -229,17 +244,28 @@ function saveDecFormVariables() {
     localStorage.setItem("prevsick", prevsick);
 }
 
-
-
 function printDecFormVariables() {
     var fname = localStorage.getItem("fname");
-    var fname = localStorage.getItem("fname");
-    var fname = localStorage.getItem("fname");
+    var lname = localStorage.getItem("lname");
+    var age = localStorage.getItem("age");
+    var psn = localStorage.getItem("psn");
+    var allergies = localStorage.getItem("allergies");
+    var prevsick = localStorage.getItem("prevsick");
 
     console.log("fname: " + fname);
 
     var fnameEl = document.getElementById("fnameVar");
     fnameEl.innerHTML = fname;
+    var lnameEl = document.getElementById("lnameVar");
+    lnameEl.innerHTML = lname;
+    var ageEl = document.getElementById("ageVar");
+    ageEl.innerHTML = age;
+    var psnEl = document.getElementById("psnVar");
+    psnEl.innerHTML = psn;
+    var allergiesEl = document.getElementById("allergiesVar");
+    allergiesEl.innerHTML = allergies;
+    var prevsickEl = document.getElementById("prevsickVar");
+    prevsickEl.innerHTML = prevsick;
 
 }
 
